@@ -1,0 +1,99 @@
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  column-gap: 25px;
+  row-gap: 25px;
+  padding: 20px 0;
+
+  &__item {
+  }
+}
+
+.product-card {
+  position: relative;
+  padding: 55px 10px 10px;
+  border: 1px solid $earth-yellow;
+  border-radius: 15px;
+  background-color: $white-star;
+  overflow: hidden;
+
+  &__image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    padding: 10px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+
+    @media (max-width: 1024px) {
+      margin-left: 20px;
+    }
+  }
+
+  &--in-cart {
+    outline: 2px $liver-dogs solid;
+  }
+}
+
+.product-top {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+
+  &--active {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.product-name {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.product-specs {
+  & > *:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__item {
+  }
+}
+
+.product {
+  &__price {
+    font-weight: 600;
+    font-size: 1.4em;
+    color: $liver-dogs;
+  }
+}
+
+.button-add-cart {
+  background-color: $dark-olive-green;
+  width: 110px;
+
+  &:hover {
+    background-color: $artochoke;
+  }
+
+  &__svg {
+    width: 30px;
+    fill: $white-star;
+  }
+}

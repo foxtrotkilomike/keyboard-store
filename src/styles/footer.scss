@@ -1,0 +1,21 @@
+.footer {
+  border-top: 2px solid $dark-olive-green;
+  background-color: $artochoke;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 20px;
+  }
+}
+
+.gh-logo {
+  height: calc(0.7 * 60px);
+  margin-right: 45px;
+}
+
+.rsschool-logo {
+  width: 100px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kbd Store - the most modern and fancy keyboards are waiting for your order!">
+  <meta name="keywords" content="keyboard, mechanical keyboard, membrane keyboard, online store">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Keyboard Store</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">Kbd Store</a>
+          <p class="header__logo-motto">type smart!</p>
+        </div>
+        <div class="header__cart cart">
+          <img class="cart__icon" src="assets/shopping-cart.svg" alt="cart">
+          <div class="cart__sticker">0</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <h1 class="visually-hidden">Keyboard Store</h1>
+        <section class="main__search">
+          <div class="search__container _container">
+            <form action class="search-form">
+              <input class="input input-search" type="search" placeholder="Search..." autofocus autocomplete="off">
+            </form>
+          </div>
+        </section>
+
+        <section class="main__catalog catalog">
+          <div class="catalog__container _container">
+            <section class="catalog__filters">
+              <div class="filters__wrapper">
+                <h2 class="h2 filters__heading">Filters</h2>
+                <div class="filters__container filters__container--range">
+                  <div class="filter__box">
+                    <p class="filter__name">Price</p>
+                    <input class="input input-range" type="range" min="0" max="340" value="340" step="10" name="price"
+                      id="price-range">
+                    <div class="range-label">
+                      <p>$0</p>
+                      <p>$340</p>
+                    </div>
+                  </div>
+                  <div class="filter__box">
+                    <p class="filter__name">Model year</p>
+                    <input class="input input-range" type="range" name="year" min="2019" max="2022" value="2022"
+                      step="1" id="year-range">
+                    <div class="range-label">
+                      <p>2019</p>
+                      <p>2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters__container filters__container--checked">
+                  <div class="filter__box">
+                    <p class="filter__name">Brand</p>
+                    <div class="filter__list">
+                      <label class="filter__item input input-label" for="keychron-model">Keychron
+                        <input class="input input-checkbox" type="checkbox" name="brand" data-name="Keychron"
+                          id="keychron-model">
+                        <div class="checkmark checkmark--square"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="logitech-model">Logitech G
+                        <input class="input input-checkbox" type="checkbox" name="brand" data-name="Logitech G"
+                          id="logitech-model">
+                        <div class="checkmark checkmark--square"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="hyperx-model">HyperX
+                        <input class="input input-checkbox" type="checkbox" name="brand" data-name="HyperX"
+                          id="hyperx-model">
+                        <div class="checkmark checkmark--square"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="redsquare-model">Red Square
+                        <input class="input input-checkbox" type="checkbox" name="brand" data-name="Red Square"
+                          id="redsquare-model">
+                        <div class="checkmark checkmark--square"></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="filter__box filter__box--colors">
+                    <p class="filter__name">Color</p>
+                    <div class="filter__list filter__list--row">
+                      <label class="filter__item input input-label" for="color-red">
+                        <input class="input input-checkbox" type="checkbox" name="color" data-name="red" id="color-red">
+                        <div class="checkmark checkmark--round color-red"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="color-gray">
+                        <input class="input input-checkbox" type="checkbox" name="color" data-name="gray"
+                          id="color-gray">
+                        <div class="checkmark checkmark--round color-gray"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="color-black">
+                        <input class="input input-checkbox" type="checkbox" name="color" data-name="black"
+                          id="color-black">
+                        <div class="checkmark checkmark--round color-black"></div>
+                      </label>
+                      <label class="filter__item input input-label" for="color-white">
+                        <input class="input input-checkbox" type="checkbox" name="color" data-name="white"
+                          id="color-white">
+                        <div class="checkmark checkmark--round color-white"></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="filter__box">
+                    <p class="filter__name">Keys number</p>
+                    <label class="filter__item input input-label" for="many-keys-count">104
+                      <input class="input input-checkbox" type="checkbox" name="keys_number" data-name="104"
+                        id="many-keys-count">
+                      <div class="checkmark checkmark--square"></div>
+                    </label>
+                    <label class="filter__item input input-label" for="medium-keys-count">87
+                      <input class="input input-checkbox" type="checkbox" name="keys_number" data-name="87"
+                        id="medium-keys-count">
+                      <div class="checkmark checkmark--square"></div>
+                    </label>
+                    <label class="filter__item input input-label" for="small-keys-conut">68
+                      <input class="input input-checkbox" type="checkbox" name="keys_number" data-name="68"
+                        id="small-keys-conut">
+                      <div class="checkmark checkmark--square"></div>
+                    </label>
+                  </div>
+                  <div class="filter__box">
+                    <label class="filter__item input input-label" for="popular">Only most popular
+                      <input class="input input-checkbox-boolean" type="checkbox" name="is_popular" id="popular">
+                      <div class="checkmark checkmark--square"></div>
+                    </label>
+                  </div>
+
+                  <div class="filter__box">
+                    <button class="button button-reset button-reset__filters">Reset filters</button>
+                  </div>
+                  <div class="filter__box">
+                    <button class="button button-reset button-reset__storage">Reset local preferences</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="catalog__content">
+              <section class="catalog__sorting">
+                <label class="sorting-label h2" for="sorting">Sort by:</label>
+                <select class="input" name="sorting" id="sorting">
+                  <option value="name-decrease">A - Z</option>
+                  <option value="name-increase">Z - A</option>
+                  <option value="year-decrease">Most new</option>
+                  <option value="year-increase">Least new</option>
+                </select>
+              </section>
+              <section class="catalog__products">
+                <h2 class="visually-hidden">Catalog</h2>
+                <ul class="products-list" id="products-list">
+                </ul>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container _container">
+        <a href="https://github.com/foxtrotkilomike">
+          <img class="gh-logo" src="./assets/GitHub-Mark-64px.png" alt="Github">
+        </a>
+        <p>2022</p>
+        <a href="https://rs.school/js/">
+          <img class="rsschool-logo" src="./assets/rs_school_js.svg" alt="Rolling scopes school">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
